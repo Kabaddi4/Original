@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 60px;
+    color: skyblue;
+    text-align: center;
+}
+
+header h2 {
+    padding-top: 7px;
+}
+
+main {
+  height: 850px;
+  background-image: url(img/pic2.jpg);
+  background-size: cover;
+}
+
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    }
+ 
+.box {
+    width: calc(100% - 200px);
+    
+}    
+
+/* 実装のポイントは、親の高さを、1カラム目(ここでいうbox)より少なくして wrapで右に寄せる */
+.sidebar {
+    width: 200px;
+    height: 850px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.side-text {
+    writing-mode: vertical-lr;
+    margin: 0 auto;
+    font-size: xx-large;
+    height: 100%;
+}
+
+.colum-box {
+    margin: 15px 0; 
+    height: 270px;
+}
+
+.colum-text {
+    color: white;
+}
+
+footer {
+    height: 25px;
+    background-color: grey;
+    color: black;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+}
